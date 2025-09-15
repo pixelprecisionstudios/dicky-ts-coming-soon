@@ -91,7 +91,7 @@ body{
 /* Coordinates are % of the .canvas (stable across viewports) */
 .knead  { left: 2%;  top:  2%;  width: 15%; }  /* “You Knead It” burst */
 .smile  { left: 15%; top: 12%;  width:  15%; }  /* small smiley */
-.exclaim{ right:24.5%; top: 33.5%;  width:  4%; z-index: 1000;}  /* small exclamation */
+.exclaim{ right:10%; top: 12%;  width:  12%; z-index: 1000;}  /* small exclamation */
 .coming { right: 5%; top:  5%;  width: 15%;}  /* big COMING SOON */
 .tonsils{ right:8%; bottom: 8.5%; width: 15%;}
 
