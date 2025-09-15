@@ -2,49 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dicky T’s – Coming Soon</title>
 
-  <!-- Google Fonts (swap with licensed fonts later) -->
+  <!-- Temporary free stand-ins; swap for licensed faces later -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800;900&family=Montserrat:wght@500;700;900&family=Oswald:wght@600;700&family=Playfair+Display:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800;900&family=Oswald:wght@600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="styles.css" />
   <meta name="description" content="Dicky T’s Spice Rub — Cleveland based and chef-made. Coming soon." />
 </head>
 <body>
   <main class="hero">
-    <!-- Stickers / badges -->
-    <div class="sticker burst knead">
-      <span class="small">You</span>
-      <span class="big">“Knead”</span>
-      <span class="small">It!</span>
-    </div>
-
-    <div class="sticker smile">
-      <div class="face">
-        <div class="eyes"></div>
-        <div class="mouth"></div>
-      </div>
-    </div>
-
-    <div class="sticker bubble-info">
-      <div class="bubble">!</div>
-    </div>
-
-    <div class="sticker coming">
-      <div class="coming-inner">
-        <div class="coming-title">COMING</div>
-        <div class="coming-sub">SOON</div>
-      </div>
-    </div>
-
-    <div class="sticker tonsils">
-      <div class="tonsils-inner">
-        <div>tickle</div>
-        <div>your tonsils</div>
-      </div>
-    </div>
+    <!-- Stickers (images) -->
+    <img class="sticker knead" src="assets/sticker-knead.png" alt="You Knead It badge" />
+    <img class="sticker smile" src="assets/sticker-smile.png" alt="Smiley sticker" />
+    <img class="sticker exclaim" src="assets/sticker-exclaim.png" alt="Exclamation bubble" />
+    <img class="sticker coming" src="assets/sticker-coming-soon.png" alt="Coming Soon" />
+    <img class="sticker tonsils" src="assets/sticker-tonsils.png" alt="Tickle your tonsils sticker" />
 
     <!-- Side copy -->
     <div class="side left">
@@ -56,41 +31,20 @@
       <p>MADE</p>
     </div>
 
-    <!-- Logo / center lockup -->
+    <!-- Center lockup (single PNG the designers export) -->
     <section class="lockup" aria-label="Dicky T’s Spice Rub">
-      <h1 class="arch">DICKY T’S</h1>
-      <div class="stack">
-        <div class="spice">SPICE</div>
-        <div class="rub">RUB</div>
-      </div>
-
-      <!-- Lips & tongue — inline SVG -->
-      <svg class="lips" viewBox="0 0 260 190" role="img" aria-label="Lips with tongue">
-        <defs>
-          <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
-            <feGaussianBlur stdDeviation="0.7" />
-          </filter>
-        </defs>
-        <!-- outline lips -->
-        <path d="M30,110 Q80,35 130,60 Q180,35 230,110
-                 M30,110 Q80,185 130,160 Q180,185 230,110" 
-              fill="none" stroke="var(--mint)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-        <!-- tongue -->
-        <path d="M130,95 q-20,0-20,20 v40 a20,20 0 0 0 40,0 v-40 q0-20-20-20z" fill="var(--pink)" />
-        <rect x="110" y="125" width="40" height="35" rx="8" ry="8" fill="var(--pink-darker)"/>
-        <rect x="126" y="115" width="8" height="60" rx="4" fill="var(--mint)"/>
-      </svg>
-
-      <p class="tagline">BECAUSE THE BEST FLAVOR STARTS WHEN YOU<br class="hide-sm"/> GRAB YOUR MEAT &amp; RUB IT</p>
+      <img class="lockup-img"
+           src="assets/lockup-center.png"
+           alt="DICKY T’S SPICE RUB logo" />
+      <p class="tagline">
+        BECAUSE THE BEST FLAVOR STARTS WHEN YOU<br class="hide-sm" />
+        GRAB YOUR MEAT &amp; RUB IT
+      </p>
     </section>
   </main>
 
   <footer class="foot">
-    <p>&copy; <span id="yr"></span> Dicky T’s. All rights reserved.</p>
+    <p>&copy; 2025 Dicky T’s. All rights reserved.</p>
   </footer>
-
-  <script>
-    document.getElementById('yr').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
