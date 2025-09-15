@@ -31,8 +31,6 @@ body{
   margin:auto;
 }
 
-/* If you didn't wrap yet, just add: <main class="hero"><div class="canvas"> ... */
-.hero > *:not(.canvas){display:none} /* safety if old nodes exist */
 
 /* === Center lockup === */
 .lockup{
@@ -99,6 +97,8 @@ body{
 
 /* === Footer === */
 .foot{
+  position: absolute;
+  bottom: 2%;
   text-align:center;
   color:rgba(255,255,255,.85);
   font-size:14px;
