@@ -1,0 +1,260 @@
+/* Dicky T’s Coming Soon — static page
+   Swap Google Fonts with licensed ones when ready:
+   - League Spartan ~ Gill Sans Nova UltraBold
+   - Oswald Condensed ~ Gotham Condensed
+   - Montserrat ~ Gotham
+   - Playfair Display ~ Benton Modern
+*/
+:root{
+  --tomato:#DD4E2F;
+  --pink:#EB94BA;
+  --pink-darker:#d976a1;
+  --mint:#8CD1DA;
+  --cobalt:#005BAB;
+  --white:#ffffff;
+  --ink:#231f20;
+}
+
+*{box-sizing:border-box}
+
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--tomato);
+  color:var(--white);
+  font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.hero{
+  min-height:100vh;
+  position:relative;
+  padding: clamp(20px, 4vw, 40px);
+  display:grid;
+  place-items:center;
+}
+
+/* Center lockup */
+.lockup{
+  text-align:center;
+  max-width: 1100px;
+}
+
+.arch{
+  font-family: 'League Spartan', Impact, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  font-size: clamp(48px, 10vw, 160px);
+  line-height:1;
+  display:inline-block;
+  color:var(--white);
+  /* arc effect using transform on each letter */
+}
+.arch{
+  --radius: 900px;
+  --spread: 7deg;
+  display:inline-flex;
+  gap: 0.08em;
+}
+.arch span{display:inline-block}
+
+.arch::before, .arch::after{content:''}
+
+.arch{
+  font-variation-settings: 'wght' 900;
+  text-transform:uppercase;
+}
+/* Progressive enhancement: curve with rotate for each letter via JS-free CSS */
+.arch{
+  display:block;
+}
+/* Use text-shadow to simulate bold softness */
+.arch{
+  text-shadow: 0 2px 0 rgba(0,0,0,0.07);
+}
+
+/* Stack SPICE / RUB */
+.stack{
+  margin-top: clamp(4px, 1vw, 10px);
+}
+.spice, .rub{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  letter-spacing:0.03em;
+}
+.spice{
+  font-size: clamp(36px, 6vw, 72px);
+}
+.rub{
+  font-size: clamp(44px, 7vw, 86px);
+}
+
+.lips{
+  width: clamp(160px, 28vw, 280px);
+  margin: clamp(12px, 2vw, 20px) auto;
+  display:block;
+}
+
+/* Tagline */
+.tagline{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--mint);
+  letter-spacing: 0.04em;
+  font-size: clamp(16px, 2.2vw, 28px);
+  margin-top: clamp(8px, 2vw, 16px);
+  line-height:1.25;
+}
+
+/* Side copy */
+.side{
+  position:absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  font-family: 'Oswald', sans-serif;
+  font-weight:700;
+  letter-spacing:0.06em;
+  text-align:center;
+  font-size: clamp(28px, 3.2vw, 56px);
+}
+.side.left{left: clamp(10px, 3vw, 60px)}
+.side.right{right: clamp(10px, 3vw, 60px)}
+.side p{margin:6px 0}
+
+/* Stickers */
+.sticker{position:absolute}
+
+.burst{
+  left: clamp(8px, 3vw, 60px);
+  top: clamp(8px, 3vw, 40px);
+  background: var(--cobalt);
+  color: var(--mint);
+  padding: 22px 18px;
+  clip-path: polygon(
+    50% 0%, 58% 11%, 71% 6%, 76% 18%, 89% 13%, 89% 26%,
+    100% 30%, 93% 42%, 100% 50%, 93% 58%, 100% 70%, 89% 74%,
+    89% 87%, 76% 82%, 71% 94%, 58% 89%, 50% 100%, 42% 89%,
+    29% 94%, 24% 82%, 11% 87%, 11% 74%, 0% 70%, 7% 58%,
+    0% 50%, 7% 42%, 0% 30%, 11% 26%, 11% 13%, 24% 18%,
+    29% 6%, 42% 11%
+  );
+  border: 6px solid var(--mint);
+  text-align:center;
+  font-family: 'Playfair Display', serif;
+  font-weight:800;
+  line-height:1.05;
+}
+.burst .small{display:block; font-size: clamp(10px, 1.1vw, 16px)}
+.burst .big{display:block; font-size: clamp(14px, 1.4vw, 20px)}
+
+.smile{
+  left: clamp(220px, 22vw, 300px);
+  top: clamp(120px, 16vw, 200px);
+  width: clamp(70px, 8vw, 110px);
+  height: auto;
+  aspect-ratio: 1/1;
+  border: 6px solid var(--mint);
+  border-radius: 50%;
+  display:grid;
+  place-items:center;
+  background: transparent;
+}
+.smile .face{
+  width: 70%;
+  height: 70%;
+  border: 6px solid var(--pink);
+  border-radius: 50%;
+  position:relative;
+}
+.smile .eyes{
+  position:absolute; top:28%; left:50%; transform:translateX(-50%);
+  width:60%;
+  height:8px;
+  border-top:6px solid var(--pink);
+  border-radius: 20px;
+}
+.smile .mouth{
+  position:absolute; bottom:24%; left:50%; transform:translateX(-50%);
+  width:60%;
+  height:12px;
+  border-bottom:6px solid var(--pink);
+  border-radius: 20px;
+}
+
+.bubble-info{
+  right: clamp(230px, 24vw, 320px);
+  top: clamp(120px, 16vw, 200px);
+}
+.bubble-info .bubble{
+  width: clamp(70px, 8vw, 110px);
+  height: clamp(70px, 8vw, 110px);
+  background: var(--mint);
+  color: var(--cobalt);
+  border: 6px solid var(--cobalt);
+  border-radius: 50%;
+  display:grid; place-items:center;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 900;
+  font-size: clamp(28px, 3vw, 44px);
+}
+
+.coming{
+  right: clamp(60px, 4vw, 100px);
+  top: clamp(56px, 4vw, 80px);
+  background: var(--mint);
+  border: 6px solid var(--cobalt);
+  border-radius: 120px;
+  padding: clamp(10px, 1.5vw, 16px) clamp(14px, 2vw, 24px);
+}
+.coming-inner{
+  background: var(--cobalt);
+  color: var(--mint);
+  border-radius: 100px;
+  padding: clamp(10px, 1.2vw, 14px) clamp(16px, 2vw, 22px);
+  text-align:center;
+  min-width: clamp(140px, 16vw, 220px);
+}
+.coming-title{ font-family:'Playfair Display', serif; font-weight:800; letter-spacing:0.02em; font-size: clamp(20px, 2.2vw, 30px)}
+.coming-sub{ font-family:'Playfair Display', serif; font-weight:800; letter-spacing:0.02em; font-size: clamp(20px, 2.2vw, 32px)}
+
+.tonsils{
+  right: clamp(80px, 8vw, 140px);
+  bottom: clamp(40px, 5vw, 80px);
+  background: var(--pink);
+  border: 6px solid var(--mint);
+  border-radius: 120px/90px;
+  padding: 12px 18px;
+  transform: rotate(12deg);
+}
+.tonsils-inner{
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight:700;
+  letter-spacing:0.06em;
+  line-height:1.05;
+  font-size: clamp(14px, 1.6vw, 22px);
+  text-align:center;
+}
+
+/* Footer */
+.foot{
+  text-align:center;
+  color: rgba(255,255,255,0.8);
+  font-size: 14px;
+  padding: 12px 0 20px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 960px){
+  .side{display:none}
+}
+
+@media (min-width: 960px){
+  /* Create gentle arc for DICKY T’S by spacing letters */
+  .arch{letter-spacing:0.14em}
+}
+
+/* Utility */
+.hide-sm{display:none}
+@media (min-width:680px){ .hide-sm{display:inline} }
