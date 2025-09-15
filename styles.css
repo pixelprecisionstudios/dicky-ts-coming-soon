@@ -115,3 +115,55 @@ body{
   .knead{ left:4.5% }
   .coming{ right:5.5% }
 }
+
+/* EMAIL SIGNUP */
+
+/* a11y helper */
+.visually-hidden {
+  position:absolute !important; width:1px; height:1px; margin:-1px; padding:0;
+  overflow:hidden; clip:rect(0 0 0 0); border:0;
+}
+
+/* Sign-up bar */
+.signup{
+  margin: clamp(18px, 2.6vw, 26px) auto 0;
+  display:flex; gap:10px; justify-content:center; align-items:center;
+  flex-wrap:wrap;
+}
+.signup input[type="email"]{
+  width:min(520px, 80vw);
+  padding:14px 16px;
+  border-radius:10px;
+  border:3px solid var(--mint);
+  background:#ffffff; color:#000;
+  font-size:clamp(16px, 1.8vw, 20px);
+  outline:none;
+}
+.signup input[type="email"]::placeholder{ color:#7a7a7a; }
+
+/* honeypot (hidden from human users) */
+.signup .hp{ display:none; }
+
+.signup button{
+  padding:14px 18px;
+  border-radius:10px;
+  border:3px solid #ffffff;
+  background:transparent;
+  color:#ffffff;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  font-size:clamp(14px, 1.6vw, 18px);
+  cursor:pointer;
+}
+.signup button:disabled{ opacity:.6; cursor:not-allowed; }
+
+.signup .msg{
+  width:100%;
+  text-align:center;
+  color:var(--mint);
+  font-weight:800;
+  margin-top:8px;
+  min-height:1.2em; /* reserve space to avoid layout jump */
+}
+
