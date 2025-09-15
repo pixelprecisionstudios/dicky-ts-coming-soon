@@ -66,6 +66,7 @@ body{
 /* === Side copy (CLEVELAND BASED / AND CHEF MADE) === */
 .side{
   position:absolute;
+  color: #EB94BA;
   top:48%;                      /* vertical center like comp */
   transform:translateY(-50%);
   text-align:center;
