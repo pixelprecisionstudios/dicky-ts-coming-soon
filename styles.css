@@ -41,7 +41,7 @@ body{
 }
 .lockup-img{
   /* Keep it big but leave room for side copy; matches comp scale. */
-  width: 50%;
+  width: 40%;
   height:auto;
   display:block;
   margin-inline:auto;
