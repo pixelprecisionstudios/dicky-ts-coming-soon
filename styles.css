@@ -26,7 +26,7 @@ body{
 .canvas{
   /* Acts like the comp’s safe area. Tune max-width/ratio if needed. */
   position:relative;
-  width:min(1200px, 94vw);
+  width: 100vw;
   min-height: 100vh;
   margin:auto;
 }
