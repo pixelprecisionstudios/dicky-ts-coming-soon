@@ -89,7 +89,7 @@ body{
 }
 
 /* Coordinates are % of the .canvas (stable across viewports) */
-.knead  { left: 3.5%;  top:  3.5%;  width: 10%; }  /* “You Knead It” burst */
+.knead  { left: 2%;  top:  2%;  width: 20%; }  /* “You Knead It” burst */
 .smile  { left: 26.5%; top: 32.5%;  width:  4%; }  /* small smiley */
 .exclaim{ right:24.5%; top: 33.5%;  width:  4%; }  /* small exclamation */
 .coming { right: 4.0%; top:  7.0%;  width: 18%; }  /* big COMING SOON */
