@@ -89,11 +89,11 @@ body{
 }
 
 /* Coordinates are % of the .canvas (stable across viewports) */
-.knead  { left: 2%;  top:  2%;  width: 20%; }  /* “You Knead It” burst */
-.smile  { left: 26.5%; top: 32.5%;  width:  4%; }  /* small smiley */
+.knead  { left: 2%;  top:  2%;  width: 15%; }  /* “You Knead It” burst */
+.smile  { left: 15%; top: 12%;  width:  15%; }  /* small smiley */
 .exclaim{ right:24.5%; top: 33.5%;  width:  4%; }  /* small exclamation */
-.coming { right: 4.0%; top:  7.0%;  width: 18%; }  /* big COMING SOON */
-.tonsils{ right:10.0%; bottom: 8.5%; width: 15%; transform:rotate(14deg); }
+.coming { right: 8%; top:  15%;  width: 12%; z-index: 1000; }  /* big COMING SOON */
+.tonsils{ right:8%; bottom: 8.5%; width: 15%;}
 
 /* === Footer === */
 .foot{
