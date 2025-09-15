@@ -27,7 +27,7 @@ body{
   /* Acts like the comp’s safe area. Tune max-width/ratio if needed. */
   position:relative;
   width:min(1200px, 94vw);
-  min-height:min(680px, 70vh);
+  min-height: 100vh;
   margin:auto;
 }
 
