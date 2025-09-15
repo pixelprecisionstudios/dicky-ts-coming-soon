@@ -42,6 +42,64 @@
         BECAUSE THE BEST FLAVOR STARTS WHEN YOU<br class="hide-sm" />
         GRAB YOUR MEAT &amp; RUB IT
       </p>
+      
+      <!-- Email signup -->
+<form id="signup" class="signup" aria-label="Email sign up">
+  <label for="email" class="visually-hidden">Email</label>
+  <input id="email" name="email" type="email" inputmode="email"
+         placeholder="Enter your email" required>
+  <input type="text" name="company" class="hp" tabindex="-1" autocomplete="off">
+  <button type="submit" id="submitBtn">Notify Me</button>
+  <p class="msg" id="formMsg" role="status" aria-live="polite"></p>
+</form>
+
+<script>
+  // 👉 Replace with your deployed Web App URL from Apps Script
+  const WEB_APP_URL = "https://script.google.com/macros/s/REPLACE_WITH_YOURS/exec";
+
+  const form = document.getElementById('signup');
+  const btn  = document.getElementById('submitBtn');
+  const msg  = document.getElementById('formMsg');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Basic front-end validation
+    const email = (document.getElementById('email').value || '').trim();
+    const bot   = (form.querySelector('.hp').value || '').trim(); // honeypot
+    if (!email || bot) return;
+
+    btn.disabled = true;
+    btn.textContent = 'Submitting…';
+    msg.textContent = '';
+
+    // Build a simple form payload to avoid CORS preflight
+    const data = new FormData(form);
+    // Optional: pass basic context (UTMs if present)
+    const params = new URLSearchParams(window.location.search);
+    ['utm_source','utm_medium','utm_campaign'].forEach(k => {
+      if (params.get(k)) data.append(k, params.get(k));
+    });
+    data.append('ref', location.href);
+    data.append('ua',  navigator.userAgent);
+
+    try {
+      // Use `no-cors` to skip preflight (Apps Script will receive it fine)
+      await fetch(WEB_APP_URL, { method: 'POST', body: data, mode: 'no-cors' });
+
+      // We can’t read the response in no-cors mode—assume success if no error is thrown
+      form.reset();
+      msg.textContent = 'Thanks! You’re on the list.';
+    } catch (err) {
+      msg.textContent = 'Hmm, something went wrong. Please try again.';
+      console.error(err);
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Notify Me';
+    }
+  });
+</script>
+
     </section>
     </div>
     <div class="foot">
