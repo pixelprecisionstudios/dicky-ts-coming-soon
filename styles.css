@@ -132,6 +132,7 @@ font-style: normal;
   /* Slight inward pull so stickers don’t clip on small screens */
   .knead{ left:4.5% }
   .coming{ right:5.5% }
+  .tagline{ font-size: 1.3rem; }
 }
 
 /* EMAIL SIGNUP */
