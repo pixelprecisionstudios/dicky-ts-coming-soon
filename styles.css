@@ -107,6 +107,12 @@ font-style: normal;
   will-change: transform;
 }
 
+.sticker.exclaim{
+  animation: dickyts-pulse var(--exclaim-duration) ease-in-out infinite;
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
 /* === Footer === */
 .foot{
   position: absolute;
@@ -181,7 +187,14 @@ font-style: normal;
   min-height:1.2em; /* reserve space to avoid layout jump */
 }
 
+/* KEYFRAMES ANIMATIONS */
+
 @keyframes dickyts-spin {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
+}
+
+@keyframes dickyts-pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.1); }
 }
