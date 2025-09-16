@@ -126,7 +126,7 @@ font-style: normal;
 /* === Responsive rules === */
 @media (max-width: 1100px){
   .side{ display:none; } /* keep hero clean on smaller screens */
-  .canvas{ width:min(1000px, 96vw); min-height:min(640px, 70vh); }
+  .canvas{ width: 100vw; height: 100vh; }
   .lockup{ margin-top: 10vh; }
   .lockup-img{ width:60%; }
   .mouth-img{ width:min(36%, 340px); }
