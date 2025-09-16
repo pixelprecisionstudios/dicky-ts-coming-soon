@@ -99,6 +99,14 @@ font-style: normal;
 .coming { right: 5%; top:  5%;  width: 15%;}  /* big COMING SOON */
 .tonsils{ right:8%; bottom: 8.5%; width: 15%;}
 
+/* STICKER ANIMATIONS */
+
+.sticker.smile{
+  animation: dickyts-spin 18s linear infinite; /* adjust speed */
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
 /* === Footer === */
 .foot{
   position: absolute;
@@ -173,3 +181,7 @@ font-style: normal;
   min-height:1.2em; /* reserve space to avoid layout jump */
 }
 
+@keyframes dickyts-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
