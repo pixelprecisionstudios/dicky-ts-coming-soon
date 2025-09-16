@@ -136,6 +136,13 @@ font-style: normal;
   .tagline{ font-size: 1.3rem; }
 }
 
+@media (max-width: 665px){
+  .knead{ width: 35%; left: 0; top: 0;}
+  .smile{ width: 25%; top: 9%;}
+  .coming{ width: 25%; top: 3%;}
+  .exclaim{ width: 18%; right: 16%; top: 12%;}
+}
+
 /* EMAIL SIGNUP */
 
 /* a11y helper */
