@@ -108,7 +108,7 @@ font-style: normal;
 }
 
 .sticker.exclaim{
-  animation: dickyts-pulse var(--exclaim-duration) ease-in-out infinite;
+  animation: dickyts-pulse 3s ease-in-out infinite;
   transform-origin: 50% 50%;
   will-change: transform;
 }
