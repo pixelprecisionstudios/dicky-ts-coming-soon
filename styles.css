@@ -116,11 +116,11 @@ font-style: normal;
 /* === Footer === */
 .foot{
   position: absolute;
-  bottom: 2%;
+  bottom: 0;
   text-align:center;
   color:rgba(255,255,255,.85);
   font-size:14px;
-  padding:12px 0 20px;
+  padding:12px 0 0px;
 }
 
 /* === Responsive rules === */
