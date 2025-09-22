@@ -39,7 +39,7 @@ body{
   position:relative;
   text-align:center;
   z-index:20; /* above side text */
-  margin-top: 25vh;
+  margin-top: 20vh;
 }
 .lockup-img{
   /* Keep it big but leave room for side copy; matches comp scale. */
