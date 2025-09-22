@@ -128,8 +128,8 @@ font-style: normal;
   .side{ display:none; } /* keep hero clean on smaller screens */
   .canvas{ width: 100vw; height: 100vh; }
   .lockup{ height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 0;}
-  .lockup-img{ width:60%; }
-  .mouth-img{ width:min(36%, 340px); }
+  .lockup-img{ width:30%; }
+  .mouth-img{ width:15%; }
   /* Slight inward pull so stickers don’t clip on small screens */
   .knead{ left:4.5% }
   .coming{ right:5.5% }
