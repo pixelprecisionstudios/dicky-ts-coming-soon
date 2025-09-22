@@ -43,7 +43,7 @@ body{
 }
 .lockup-img{
   /* Keep it big but leave room for side copy; matches comp scale. */
-  width: 40%;
+  width: 30%;
   height:auto;
   display:block;
   margin-inline:auto;
@@ -51,7 +51,7 @@ body{
 .mouth-img{
   display:block;
   margin: clamp(6px, 0.9vw, 12px) auto 0;
-  width: min(30%, 300px);
+  width: 10%;
   height:auto;
   z-index:21;
 }
