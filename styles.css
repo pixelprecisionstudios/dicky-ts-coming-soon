@@ -184,7 +184,15 @@ font-style: normal;
   letter-spacing:.05em;
   font-size:clamp(14px, 1.6vw, 18px);
   cursor:pointer;
+  transition: .2s ease;
 }
+
+.signup button:hover {
+    background: white;
+    color: #8ad2db;
+    transition: .2s ease;
+}
+
 .signup button:disabled{ opacity:.6; cursor:not-allowed; }
 
 .signup .msg{
