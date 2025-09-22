@@ -101,12 +101,6 @@ font-style: normal;
 
 /* STICKER ANIMATIONS */
 
-.sticker.smile{
-  animation: dickyts-spin 18s linear infinite; /* adjust speed */
-  transform-origin: 50% 50%;
-  will-change: transform;
-}
-
 .sticker.exclaim{
   animation: dickyts-pulse 3s ease-in-out infinite;
   transform-origin: 50% 50%;
