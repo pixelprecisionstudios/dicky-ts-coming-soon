@@ -193,6 +193,7 @@ font-style: normal;
     background: white;
     color: #8ad2db;
     transition: .2s ease;
+    border: 3px solid #8cd1da;
 }
 
 .signup button:disabled{ opacity:.6; cursor:not-allowed; }
