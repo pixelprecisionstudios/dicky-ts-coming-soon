@@ -54,7 +54,7 @@ body{
   width: 10%;
   height:auto;
   z-index:21;
-  animation: float 6s ease-in-out infinite, dickyts-pulse 3s ease-in-out infinite;;
+  animation: float 6s ease-in-out infinite;
 }
 .tagline{
   margin-top: clamp(8px, 1.2vw, 14px);
