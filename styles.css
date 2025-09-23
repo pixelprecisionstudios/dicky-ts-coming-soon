@@ -54,7 +54,6 @@ body{
   width: 10%;
   height:auto;
   z-index:21;
-  animation: float 6s ease-in-out infinite;
 }
 .tagline{
   margin-top: clamp(8px, 1.2vw, 14px);
@@ -218,16 +217,4 @@ font-style: normal;
 @keyframes dickyts-pulse {
   0%, 100% { transform: scale(1); }
   50%      { transform: scale(1.1); }
-}
-
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(20px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
 }
