@@ -77,7 +77,7 @@ font-weight: 600;
 font-style: normal;
   letter-spacing:.08em;
   font-size: 3rem;
-  line-height:1.1;
+  line-height: 2.3rem;
   z-index:10;                   /* under logo, over background */
 }
 .side.left  { left: 3%; }       /* nudged out so arch won’t overlap */
