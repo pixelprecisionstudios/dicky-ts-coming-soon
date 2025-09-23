@@ -179,6 +179,7 @@ font-style: normal;
   border:3px solid #ffffff;
   background:transparent;
   font-family: "gotham-condensed", sans-serif;
+  font-size: clamp(16px, 1.8vw, 20px);
   color:#ffffff;
   font-weight:800;
   text-transform:uppercase;
